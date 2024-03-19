@@ -244,7 +244,7 @@ npm run build
 npm run preview
 ```
 
-### GitHub Pages
+### Vite Configuration
 
 Set the correct `base` in [`vite.config.ts`](./vite.config.ts)
 
@@ -261,6 +261,16 @@ export default defineConfig({
   },
 });
 ```
+
+#### Enable GitHub Pages
+
+![github pages](./rassets/github-pages.png)
+
+1. Go to repository `Settings`
+2. Under **code and automation**, select `Pages`
+3. Under **Build and deployment**, and **Branch**, select `main` branch with `/root` folder.
+4. Click `save`
+5. Setup [`ci.yaml`](#github-workflow-yaml) once, then push your changes anytime!
 
 ### Github Workflow Yaml
 
