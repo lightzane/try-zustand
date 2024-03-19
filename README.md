@@ -272,13 +272,20 @@ export default defineConfig({
 4. Click `save`
 5. Setup [`ci.yaml`](#github-workflow-yaml) once, then push your changes anytime!
 
+**NOTE**, doing the steps `1-4` above will use the Github's default workflow `pages build and deployment`
+so you have to manually run the your `Vite Deployment of static content to Pages` workflow ([see below](#github-workflow-yaml)).
+
+#### Otherwise, use the `GitHub Actions` as the source under **Build and Deployment**.
+
+![github actions](./rassets/github-actions.png)
+
 ### Github Workflow Yaml
 
 See [`ci.yaml`](./.github/workflows/ci.yml)
 
 ```yaml
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Vite Deployment of static content to Pages
 
 on:
   # Runs on pushes targeting the default branch
