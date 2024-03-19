@@ -264,18 +264,11 @@ export default defineConfig({
 
 #### Enable GitHub Pages
 
-![github pages](./rassets/github-pages.png)
-
 1. Go to repository `Settings`
 2. Under **code and automation**, select `Pages`
-3. Under **Build and deployment**, and **Branch**, select `main` branch with `/root` folder.
+3. Use the `GitHub Actions` as the source under **Build and Deployment**.
 4. Click `save`
 5. Setup [`ci.yaml`](#github-workflow-yaml) once, then push your changes anytime!
-
-**NOTE**, doing the steps `1-4` above will use the Github's default workflow `pages build and deployment`
-so you have to manually run the your `Vite Deployment of static content to Pages` workflow ([see below](#github-workflow-yaml)).
-
-#### Otherwise, use the `GitHub Actions` as the source under **Build and Deployment**.
 
 ![github actions](./rassets/github-actions.png)
 
