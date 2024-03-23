@@ -278,7 +278,7 @@ See [`ci.yaml`](./.github/workflows/ci.yml)
 
 ```yaml
 # Simple workflow for deploying static content to GitHub Pages
-name: Vite Deployment of static content to Pages
+name: Deployment of static content to Pages
 
 on:
   # Runs on pushes targeting the default branch
